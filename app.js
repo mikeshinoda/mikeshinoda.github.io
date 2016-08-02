@@ -3,8 +3,6 @@ $.getJSON("myJSON.js", function(result){
     $.each(result, function(i)
     {
         var li = $('<li/>')
-            .addClass('ui-menu-item')
-            .attr('role', 'menuitem')
             .text(result[i].name)
             .appendTo(cList);
     });
